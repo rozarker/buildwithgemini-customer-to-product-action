@@ -97,15 +97,12 @@ _contexts: dict[str, str] = {}
 _card: AgentCard | None = None
 
 
-from google.protobuf.json_format import ParseDict
-
-
 async def _get_card(client: httpx.AsyncClient) -> AgentCard:
     global _card
     if _card is None:
         resp = await client.get(A2A_CARD_URL)
         resp.raise_for_status()
-        card = ParseDict(resp.json(), AgentCard(), ignore_unknown_fields=True)
+        card = AgentCard.model_validate(resp.json())
         _card = card
     return _card
 
