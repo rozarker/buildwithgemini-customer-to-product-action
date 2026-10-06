@@ -6,7 +6,7 @@ from google.genai import types
 from app.image_tool import generate_ux_mockup
 from app.firestore_tools import add_product_opportunity
 
-MODEL = "gemini-3.6-flash"
+MODEL = "gemini-3.8-flash"
 
 ACTION_PLANNER_INSTRUCTION = """You are the Product Action Planner & Backlog Drafter agent.
 Your job is to recommend concrete next steps for prioritized opportunities and prepare formal backlog item drafts.

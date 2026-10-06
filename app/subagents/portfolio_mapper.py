@@ -4,7 +4,7 @@ from google.adk.agents import Agent
 from google.adk.models import Gemini
 from google.genai import types
 
-MODEL = "gemini-3.6-flash"
+MODEL = "gemini-3.8-flash"
 
 PORTFOLIO_MAPPER_INSTRUCTION = """You are the Portfolio Mapper agent (Product Mapper).
 Your job is to map structured product opportunities to the correct product area within our portfolio taxonomy:

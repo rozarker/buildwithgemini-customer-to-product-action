@@ -4,7 +4,7 @@ from google.adk.agents import Agent
 from google.adk.models import Gemini
 from google.genai import types
 
-MODEL = "gemini-3.6-flash"
+MODEL = "gemini-3.8-flash"
 
 SIGNAL_EXTRACTOR_INSTRUCTION = """You are the Customer Signal Extractor agent (Meeting Intelligence).
 Your job is to analyze customer meeting transcripts, call notes, emails, or customer feedback.

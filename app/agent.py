@@ -36,7 +36,7 @@ from app.subagents.opportunity_miner import opportunity_miner_agent
 from app.subagents.portfolio_mapper import portfolio_mapper_agent
 from app.subagents.signal_extractor import signal_extractor_agent
 
-MODEL = "gemini-3.6-flash"
+MODEL = "gemini-3.8-flash"
 
 
 def read_text_file(file_path: str) -> str:

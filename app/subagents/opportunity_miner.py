@@ -5,7 +5,7 @@ from google.adk.models import Gemini
 from google.genai import types
 from app.image_tool import generate_ux_mockup
 
-MODEL = "gemini-3.6-flash"
+MODEL = "gemini-3.8-flash"
 
 OPPORTUNITY_MINER_INSTRUCTION = """You are the Product Opportunity Analyst (Opportunity Miner).
 Your job is to convert extracted customer signals into structured product opportunity definitions.
